@@ -53,7 +53,7 @@ background-position:-421px -83px;
 .icon-16-pdf{background-position:-70px -83px;}
 </style>
 <div id="top-search-bar">
-	<a id="logo" href="/" title="返回网盘搜索"></a>
+	<a id="logo" href="<?php echo $this->config->item('base_url');  ?>" title="返回网盘搜索"></a>
     <div class="container">
     	<div class="row">
         	<div class="col-lg-7">
@@ -70,15 +70,15 @@ background-position:-421px -83px;
           <ul>
             <li>
               <span class="label">类型：</span>
-              <a id="type-all" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order" ?>" class="label">全部</a>
-              <a id="type-0" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=0" ?>" class="label">视频</a>
-              <a id="type-1" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=1" ?>"  class="label">图片</a>
-              <a id="type-2" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=2" ?>" class="label">文档</span>
-              <a id="type-3" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=3" ?>" class="label">音乐</a>
-              <a id="type-4" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=4" ?>" class="label">压缩包</a>
-              <a id="type-5" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=5" ?>" class="label">软件</a>
-              <a id="type-dir" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=dir" ?>" class="label">文件夹</a>
-              <a id="type-abm" href="/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=abm" ?>" class="label">专辑</a>
+              <a id="type-all" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order" ?>" class="label">全部</a>
+              <a id="type-0" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=0" ?>" class="label">视频</a>
+              <a id="type-1" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=1" ?>"  class="label">图片</a>
+              <a id="type-2" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=2" ?>" class="label">文档</span>
+              <a id="type-3" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=3" ?>" class="label">音乐</a>
+              <a id="type-4" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=4" ?>" class="label">压缩包</a>
+              <a id="type-5" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=5" ?>" class="label">软件</a>
+              <a id="type-dir" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=dir" ?>" class="label">文件夹</a>
+              <a id="type-abm" href="<?php echo $this->config->item('base_url');  ?>/search?q=<?php echo urlencode("$key_word")."&ord=$order&type=abm" ?>" class="label">专辑</a>
             </li>
             <!--
             <li>
@@ -91,7 +91,7 @@ background-position:-421px -83px;
         </div>
         <div id="tip">
             找到约 <?php echo $found?> 条结果<nobr> （用时 <?php echo $time_used?>秒）&nbsp;</nobr>
-            <a style="float:right" href="http://www.ibying.com/search?q=<?php echo urlencode("$key_word")."&type=pan"?>">使用深度搜索</a>
+            <a style="float:right" href="">使用深度搜索</a>
         </div>
         <style type="text/css">
               .search-tip{margin-top:20px;line-height:200%;}

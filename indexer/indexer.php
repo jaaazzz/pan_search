@@ -2,7 +2,7 @@
 <?php
 # 将$prefix替换为你网站部署的根路径
 # 参考 url: http://xunsearch.com/doc/php/guide/start.installation
-require '$prefix/application/helpers/xs/lib/XS.php';
+require '/var/www/BaiduyunSpider/web/application/helpers/xs/lib/XS.php';
 
 class Db{
 
@@ -11,7 +11,7 @@ class Db{
 	protected $port='3306';
 	protected $user='root';
 	# 数据库 密码
-	protected $pass='';
+	protected $pass='zondy123';
 	protected $charset='utf8';
 	protected $db_name='pan';
 

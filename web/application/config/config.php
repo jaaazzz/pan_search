@@ -29,7 +29,7 @@ $config['site_description']  =  '百度云盘搜索引擎，海量资源免费�
 | environments.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/pan';
 
 /*
 |--------------------------------------------------------------------------

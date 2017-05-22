@@ -1,6 +1,7 @@
 <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
 <script src="<?php echo site_url('static/js/bootstrap.min.js')?>"></script>
-<script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
+<!-- <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script> -->
+<script charset="gbk" src=""></script>
 <script src="<?php echo site_url('static/js/base64.min.js'); ?>"></script>
 <script type="text/javascript">
 function full_screen(){

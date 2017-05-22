@@ -20,7 +20,7 @@ DB_HOST='127.0.0.1'
 DB_PORT='3306'
 DB_USER='root'
 # MySQL密码
-DB_PASS=''
+DB_PASS='zondy123'
 # 数据库名称
 DB_NAME='pan'
 SPIDER_INTERVAL=1
@@ -191,7 +191,7 @@ class BaiduPanSpider(object):
 			returns.append({'fans_uname':fans_uname,'fans_uk':fans_uk,'avatar_url':avatar_url,'intro':intro,'follow_count':follow_count,'fans_count':fans_count,'pubshare_count':pubshare_count,'album_count':album_count})
 
 		return (total_count,count,returns)
-
+#估计返回值是某个用户分享文件的个数，其粉丝用户的数量和粉丝用户的信息
 	def getFollows(self,uk,start=0,limit=24):
 		follows_url='http://yun.baidu.com/pcloud/friend/getfollowlist?query_uk=%d&limit=%d&start=%d&bdstoken=d82467db8b1f5741daf1d965d1509181&channel=chunlei&clienttype=0&web=1'%(uk,limit,start)
 		ref='http://yun.baidu.com/pcloud/friendpage?type=follow&uk=%d&self=1'%uk
